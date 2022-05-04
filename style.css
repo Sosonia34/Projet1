@@ -1,0 +1,59 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+color: white;
+list-style: none;
+text-decoration: none;
+}
+body{
+    background-color: black;
+}
+img{
+    width: 100%;
+}
+header{
+    background-color:black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px 0;
+}
+header ul {
+    display: flex;
+    justify-content: space-around;
+    }
+header ul a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.fvr{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top:4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.fvr img{
+    height: 50px;
+    margin-right:25% ;  
+}
+h1, h2{
+    text-align: center;
+    font-size: 1rem;
+}
+.monde_virtuel{
+    width: 100%;   
+}
+
+
+
+
+  
