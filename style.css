@@ -236,12 +236,12 @@ footer img{
     body{
         margin:0 10rem;
     }
-
     .bloc_prix {
         flex-direction: row;
         justify-content: center;
     }
 }
+
     
 
 
