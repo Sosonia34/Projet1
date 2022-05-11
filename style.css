@@ -40,9 +40,12 @@ h2{
     font-size: 1.5rem;
     padding: 2rem;
 }
-.monde_virtuel{
-    width: 100%;   
-}
+.monde_virtuel:hover{
+    width: 100%;  
+    transition:1s;
+    transform:rotate3d(1,2,1,360deg)scale(1);
+    transition-duration:3s;
+    }
 h3{
     text-align: center;
     font-size: 1.5rem;
@@ -70,6 +73,10 @@ h3{
     text-align: justify;
     margin-left:1rem;
     margin-right:1rem; 
+    margin-bottom:1rem;
+}
+.presse_incline{
+    border: 5px solid #FFFFFF;
 }
 .fonctionnement p{
     font-size: 1.5rem;
@@ -95,12 +102,15 @@ h3{
 .bloc_prix{
 width: 100%;
 margin: 2rem 0;
-display: inline-flex;
-justify-content: space-around;
+display: flex; 
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
 }
 .bloc_affichage_prix{
     width: 280px;
     height: 230px;
+    margin: 10px;
     background-color: white;
     border-radius:2rem;
 }
@@ -171,6 +181,7 @@ input{
     margin: 1rem 0;
     padding: 2rem;
     border-radius:20px;
+    color: black;
 }
 #fmessage{
     padding-bottom:9rem;
@@ -182,6 +193,25 @@ button{
     width:30%;
     height:3rem;
     border-radius:20px;
+}
+
+.container-notifications{
+    position: fixed;
+    height: 150px;
+    bottom: 0px;
+    right: 0px;
+    margin: 3rem;
+    font-size: 1.2rem;
+}
+.toast{
+    padding: 1rem;
+    margin: 0.7rem;
+    border: 1px solid rgb(181, 181, 181);
+    border-left: 3px solid beige;
+    width:400px;
+    border-radius: 30px;
+    background-color:burlywood;
+    font-size: x-large;
 }
 .spacer{
     margin:7rem;
@@ -205,6 +235,11 @@ footer img{
 @media screen and (min-width: 600px){
     body{
         margin:0 10rem;
+    }
+
+    .bloc_prix {
+        flex-direction: row;
+        justify-content: center;
     }
 }
     

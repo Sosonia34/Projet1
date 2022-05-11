@@ -27,18 +27,52 @@
         <input type="text" id="fmessage" name="fmessage" placeholder="votre message"><br>               
     </form>
       
-    <button onclick="myAlert()" form="formulaire" class="envoyer" type="button">
+   <!--exemple de bouton avec message popup
+       <button onclick="myAlert()" form="formulaire" class="envoyer" type="button">
         Envoyer
-    </button>
+    </button>-->
+    <div class="container">
+        <button class="btn">ENVOYER</button>
+        <div class="container-notifications">
+            <!--Dans cette div, viendront se placer les notifications-->           
+        </div>
+    </div>
     <div class="spacer"></div>
+   
     <footer> 
-        <img src="/images/social.png" alt="reseaux sociaux">
+        <img src="./images/social.png" alt="reseaux sociaux">
         <p>FVR production 2022</p>
     </footer>
+    
     <script>
+    const btn = document.querySelector(".btn");
+console.log(btn);
+//je sélectionne et stocke la div container-notifications
+const ctn = document.querySelector(".container-notifications");
+console.log(ctn);
+btn.addEventListener("click", function(){
+    console.log("bouton cliqué");
+    //je crée un élément
+const notification = document.createElement("div");
+console.log(notification);
+//je donne un sttyle à la div
+notification.classList.add("toast");
+//j'insère du contenu texte
+notification.innerText = "Votre message a bien été envoyé !"
+console.log(notification);
+//j'accroche notification à l'élément ctn
+ctn.appendChild(notification);
+    //A la fin du chrono, je retire la notification du dom
+    setTimeout(function(){
+    notification.remove();
+}, 2000);
+}); //fermeture de btn.addEventListener
+    </script>
+
+    <!--<script> exemple d'appel du bouton en popup
         function myAlert(){
         alert("Work in Progress");
-       }
-    </script>
+    }
+    </script>-->
 </body>
 </html>
