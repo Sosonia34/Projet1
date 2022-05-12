@@ -44,7 +44,7 @@ h2{
     width: 100%;  
     transition:1s;
     transform:rotate3d(1,2,1,360deg)scale(1);
-    transition-duration:3s;
+    transition-duration:5s;
     }
 h3{
     text-align: center;
