@@ -198,19 +198,18 @@ button{
 .container-notifications{
     position: fixed;
     height: 150px;
-    bottom: 0px;
-    right: 0px;
-    margin: 3rem;
+    bottom: 50%;
+    right: auto;
     font-size: 1.2rem;
 }
 .toast{
     padding: 1rem;
     margin: 0.7rem;
     border: 1px solid rgb(181, 181, 181);
-    border-left: 3px solid beige;
-    width:400px;
+    border-left:2px solid beige;
+    width:80%;
     border-radius: 30px;
-    background-color:burlywood;
+    background-color:red;
     font-size: x-large;
 }
 .spacer{
